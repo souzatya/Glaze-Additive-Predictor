@@ -17,12 +17,15 @@ file_menu = Menu(menubar, tearoff=0)
 
 file_menu.add_command(
     label='About',
-    command= about,
+    command= about
 )
 file_menu.add_command(
     label='Close',
-    command= top.destroy
+    command= exit,
+    accelerator= "Command-W"
 )
+
+file_menu.bind_all("<Command-w>", exit)
 
 menubar.add_cascade(
     label="File",
