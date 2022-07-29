@@ -1,3 +1,5 @@
+import sys
+
 from predict.prediction import *
 from predict.predict_win import *
 from predict.about import *
@@ -8,7 +10,7 @@ top = Tk()
 top.title("Glaze Additive Predictor")
 top.geometry("430x360")
 top.resizable(width=False, height=False)
-top.iconbitmap("C:/Users/souja/PycharmProjects/GAP_win/abi.ico")
+top.iconbitmap("icon.ico")
 
 menubar = Menu(top)
 top.config(menu=menubar)
@@ -21,8 +23,11 @@ file_menu.add_command(
 )
 file_menu.add_command(
     label='Close',
-    command=top.destroy
+    command=sys.exit,
+    accelerator= "Ctrl+W"
 )
+
+file_menu.bind_all("<Control-w>", sys.exit)
 
 menubar.add_cascade(
     label="File",
@@ -33,7 +38,7 @@ menubar.add_cascade(
 logoframe = Frame(top)
 logoframe.pack(pady=15)
 
-logo = ImageTk.PhotoImage(Image.open("C:/Users/souja/PycharmProjects/GAP_win/abi.jpg").resize((71, 69), Image.Resampling(1)))
+logo = ImageTk.PhotoImage(Image.open("logo.png").resize((69, 69), Image.Resampling(1)))
 Label(logoframe, image=logo).pack()
 
 vVolume = Label(top, text="Virgin Glaze Volume (L)").place(x=30,y=100)

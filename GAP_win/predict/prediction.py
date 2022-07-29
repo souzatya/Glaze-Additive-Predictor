@@ -8,7 +8,7 @@ fF = ""
 
 
 def predict(v, V, R, fF):
-    df = pandas.read_excel("C:/Users/souja/PycharmProjects/GAP_win/GLAZE_DATASET.xlsx")
+    df = pandas.read_excel("GLAZE_DATASET.xlsx")
 
     X = df[['dD', 'fF']]
     y = df[['CMC', 'Water']]

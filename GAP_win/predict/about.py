@@ -7,7 +7,7 @@ def about():
     ab.title("About")
     ab.geometry("500x200")
     ab.resizable(width=False, height=False)
-    ab.iconbitmap("C:/Users/souja/PycharmProjects/GAP_win/abi.ico")
+    ab.iconbitmap("icon.ico")
 
     Label(ab, text="Glaze Additive Predictor", font=("Heveltica Neue", 20, 'bold')).pack(pady=15)
     Label(ab, text="Copyright © 2022, Soujatya Sarkar", font=("Heveltica Neue", 14, 'bold')).pack()
