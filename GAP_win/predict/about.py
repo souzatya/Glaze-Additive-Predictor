@@ -1,3 +1,6 @@
+import os
+
+
 from tkinter import *
 
 
@@ -7,7 +10,7 @@ def about():
     ab.title("About")
     ab.geometry("500x200")
     ab.resizable(width=False, height=False)
-    ab.iconbitmap("icon.ico")
+    ab.iconbitmap(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','icon.ico'))
 
     Label(ab, text="Glaze Additive Predictor", font=("Heveltica Neue", 20, 'bold')).pack(pady=15)
     Label(ab, text="Copyright © 2022, Soujatya Sarkar", font=("Heveltica Neue", 14, 'bold')).pack()

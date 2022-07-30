@@ -10,7 +10,7 @@ top = Tk()
 top.title("Glaze Additive Predictor")
 top.geometry("430x360")
 top.resizable(width=False, height=False)
-top.iconbitmap("icon.ico")
+top.iconbitmap(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','icon.ico'))
 
 menubar = Menu(top)
 top.config(menu=menubar)
@@ -38,7 +38,7 @@ menubar.add_cascade(
 logoframe = Frame(top)
 logoframe.pack(pady=15)
 
-logo = ImageTk.PhotoImage(Image.open("logo.png").resize((69, 69), Image.Resampling(1)))
+logo = ImageTk.PhotoImage(Image.open(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','logo.png')).resize((69, 69), Image.Resampling(1)))
 Label(logoframe, image=logo).pack()
 
 vVolume = Label(top, text="Virgin Glaze Volume (L)").place(x=30,y=100)
