@@ -1,3 +1,6 @@
+import sys
+
+
 from predict.prediction import *
 from predict.predict_win import *
 from predict.about import *
@@ -21,11 +24,11 @@ file_menu.add_command(
 )
 file_menu.add_command(
     label='Close',
-    command= exit,
+    command= sys.exit,
     accelerator= "Command-W"
 )
 
-file_menu.bind_all("<Command-w>", exit)
+file_menu.bind_all("<Command-w>", sys.exit)
 
 menubar.add_cascade(
     label="File",
@@ -36,7 +39,7 @@ menubar.add_cascade(
 logoframe= Frame(top)
 logoframe.pack(pady=15)
 
-logo = ImageTk.PhotoImage(Image.open("abi.jpg").resize((71, 69), Image.Resampling(1)))
+logo = ImageTk.PhotoImage(Image.open(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','logo.png')).resize((69, 69), Image.Resampling(1)))
 Label(logoframe, image= logo).pack()
 
 vVolume = Label(top, text="Virgin Glaze Volume (L)").place(x=30,y=100)

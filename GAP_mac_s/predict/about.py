@@ -7,6 +7,9 @@ def about():
     ab.geometry("500x200")
     ab.resizable(width=False, height=False)
 
+    menubar = Menu(ab)
+    ab.config(menu= menubar)
+
     Label(ab, text= "Glaze Additive Predictor", font= ("Heveltica Neue", 20, 'bold')).pack(pady=15)
     Label(ab, text= "Copyright © 2022, Soujatya Sarkar", font= ("Heveltica Neue", 14, 'bold')).pack()
     Label(ab, text= "Computational Development and Research - Soujatya Sarkar").pack()
