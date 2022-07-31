@@ -1,16 +1,20 @@
 import sys
 
+from res.dependencies import *
 from predict.prediction import *
 from predict.predict_win import *
-from predict.about import *
+from res.about import *
 from PIL import ImageTk, Image
+
+
+check()
 
 top = Tk()
 
 top.title("Glaze Additive Predictor")
 top.geometry("430x360")
 top.resizable(width=False, height=False)
-top.iconbitmap(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','icon.ico'))
+top.iconbitmap(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap', 'icon.ico'))
 
 menubar = Menu(top)
 top.config(menu=menubar)
