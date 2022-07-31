@@ -10,9 +10,9 @@ from setuptools import setup
 APP = ['main.py']
 APP_NAME = "Glaze Additive Predictor"
 APP_VERSION = "1.0.0"
-DATA_FILES = ['icon.ico','logo.png','GLAZE_DATASET.xlsx']
+DATA_FILES = ['res/icon.ico','res/logo.png','res/GLAZE_DATASET.xlsx']
 OPTIONS = {
-    'iconfile':'icon.ico',
+    'iconfile':'res/icon.ico',
     'plist': {
             'CFBundleName': APP_NAME,
             'CFBundleDisplayName': APP_NAME,

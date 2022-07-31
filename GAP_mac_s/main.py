@@ -1,10 +1,12 @@
 import sys
 
-
+from res.dependencies import *
 from predict.prediction import *
 from predict.predict_win import *
-from predict.about import *
+from res.about import *
 from PIL import ImageTk, Image
+
+check()
 
 top = Tk()
 
@@ -39,7 +41,8 @@ menubar.add_cascade(
 logoframe= Frame(top)
 logoframe.pack(pady=15)
 
-logo = ImageTk.PhotoImage(Image.open(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','logo.png')).resize((69, 69), Image.Resampling(1)))
+logo = ImageTk.PhotoImage(Image.open(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap',
+                                                  'logo.png')).resize((69, 69), Image.Resampling(1)))
 Label(logoframe, image= logo).pack()
 
 vVolume = Label(top, text="Virgin Glaze Volume (L)").place(x=30,y=100)
