@@ -53,17 +53,19 @@ def about():
     ab.resizable(width=False, height=False)
 
     if platform.system() == 'Windows':
+        fs = 12
         ab.iconbitmap(os.path.join(os.path.expanduser('~'),'Documents','com.soujatya_sarkar.gap','icon.ico'))
     elif platform.system() == 'Darwin':
+        fs = 14
         menubar = Menu(ab)
         ab.config(menu= menubar)
 
     Label(ab, text="Glaze Additive Predictor", font=("Heveltica Neue", 20, 'bold')).pack(pady=15)
-    Label(ab, text="Copyright © 2022, Soujatya Sarkar, All Rights Reserved.", font=("Heveltica Neue", 14, 'bold')).pack()
+    Label(ab, text="Copyright © 2022, Soujatya Sarkar, All Rights Reserved.", font=("Heveltica Neue", fs, 'bold')).pack()
     Label(ab, text="Computational Development and Research - Soujatya Sarkar").pack()
     Label(ab, text="Chemical Data Collection - Tapabrata Mondal and Soujatya Sarkar").pack()
     Label(ab, text="Author and Inventor - Soujatya Sarkar").pack()
-    Label(ab, text="Version - 1.0.0", font=("Heveltica Neue", 14, 'bold')).pack()
+    Label(ab, text="Version - 1.0.0", font=("Heveltica Neue", fs, 'bold')).pack()
 
 #4 - Prediction Algorithm
 
@@ -170,16 +172,23 @@ vDensity = Label(top, text="Virgin Glaze Density (g/cc)").place(x=30,y=150)
 rDensity = Label(top, text="Required Density (g/cc)").place(x=30,y=200)
 rFluidity = Label(top, text="Required Fluidity (°/swing)").place(x=30,y=250)
 
-vV = Entry(top)
+if platform.system()=='Windows':
+    w = 30
+elif platform.system()=='Darwin':
+    w = 20
+
+
+
+vV = Entry(top, width = w)
 vV.place(x=200,y=100)
 
-vD = Entry(top)
+vD = Entry(top, width = w)
 vD.place(x=200,y=150)
 
-rD = Entry(top)
+rD = Entry(top, width = w)
 rD.place(x=200,y=200)
 
-rF = Entry(top)
+rF = Entry(top, width = w)
 rF.place(x=200,y=250)
 
 
