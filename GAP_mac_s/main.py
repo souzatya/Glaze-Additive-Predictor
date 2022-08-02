@@ -50,16 +50,16 @@ vDensity = Label(top, text="Virgin Glaze Density (g/cc)").place(x=30,y=150)
 rDensity = Label(top, text="Required Density (g/cc)").place(x=30,y=200)
 rFluidity = Label(top, text="Required Fluidity (°/swing)").place(x=30,y=250)
 
-vV = Entry(top)
+vV = Entry(top, width = 20)
 vV.place(x=200,y=100)
 
-vD = Entry(top)
+vD = Entry(top, width = 20)
 vD.place(x=200,y=150)
 
-rD = Entry(top)
+rD = Entry(top, width = 20)
 rD.place(x=200,y=200)
 
-rF = Entry(top)
+rF = Entry(top, width = 20)
 rF.place(x=200,y=250)
 
 
