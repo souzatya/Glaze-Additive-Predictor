@@ -18,15 +18,6 @@ As adding carboxy-methyl-cellulose (CMC), decreases the density and increases th
 
 Hence, in this project we are looking to discontinue the use of calcium chloride in the glaze and try to adjust the glaze parameters by using carboxy-methyl-cellulose (CMC) as a binder, virgin glaze and water only.
 
-
-# CREDITS
-
-**Data Collection** - **TAPABRATA MONDAL** and **SOUJATYA SARKAR**
-
-**Data Analysis, ML Coding and Project Design** - **SOUJATYA SARKAR**
-
-**Advisory** - **ARINDAM GHOSH**
-
 #
 
 **Original Author** - Soujatya Sarkar
