@@ -2,11 +2,7 @@
 
 Project By -
 
-**SOUJATYA SARKAR** and **TAPABRATA MONDAL**
-
-Supervised By -
-
-**ARINDAM GHOSH**
+**SOUJATYA SARKAR**
 
 ## RESEARCH OBJECTIVE
 
